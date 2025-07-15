@@ -28,7 +28,7 @@ class TeacherService
      */
     public function show(string $id)
     {
-        return Teacher::find($id);
+        return Teacher::find  ($id);
     }
 
     /**

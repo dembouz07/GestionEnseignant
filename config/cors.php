@@ -19,16 +19,19 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+        'http://localhost:4200',
+        'https://b9fd718dbb9d.ngrok-free.app'
+    ],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => ['/^https:\/\/.*\.ngrok-free\.app$/'],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['Content-Type', 'X-Requested-With', 'Authorization'],
 
     'exposed_headers' => [],
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    'supports_credentials' => true,
 
 ];
